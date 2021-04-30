@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+   :root{
+    --p : #D1C0A8;
+    --S : #FDFFFC;
+    --b: #000;
+   }
+   .UpNav {
+    display: flex;
+    background-color: var(--p);
+    color: var(--b);
+    height: 40px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.UpNav a {
+    color: var(--b);
+}
+.UpNav p, .UpNav button{
+ font-family: 'Lexend', sans-serif;
+ display: inline;
+}
+.UpNav button{
+    border-bottom:  1px  var(--b) solid ;
+    border-left:none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    color: var(--b);
+    cursor: pointer;
+    margin-right: 8px;
+    
+}
+
+.UpNav i {
+    padding-left: 10px;   }
+
+ .email {
+     display: inline;
+     margin: 0px;
+     padding: 0px;
+ }
+ .email p{
+     display: inline-block;
+     width: 0px;
+     overflow: hidden;
+ }
+ .email:hover p{
+     display: inline;
+     width: 100%;
+     overflow: hidden;
+ }
+.UpNav a {
+    color: var(--b);
+}
+.UpNav p, .UpNav button{
+ font-family: 'Lexend', sans-serif;
+ display: inline;
+}
+.UpNav button{
+    border-bottom:  1px  var(--b) solid ;
+    border-left:none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    color: var(--b);
+    cursor: pointer;
+    margin-right: 8px;
+    
+}
+
+.UpNav i {
+    padding-left: 10px;   }
+
+ .email {
+     display: inline;
+     margin: 0px;
+     padding: 0px;
+ }
+ .email p{
+     display: inline-block;
+     width: 0px;
+     overflow: hidden;
+ }
+ .email:hover p{
+     display: inline;
+     width: 100%;
+     overflow: hidden;
+ }
+   /* Gallery*/
+   body{
+    font-family: 'Lexend', sans-serif;
+   }
+   .figure2 {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+   }
+
+   .img{
+       display: inline-block;
+   }
+   .d {
+       height: 350px;
+       position: absolute;
+   }
+   .p {
+        height: 350px;
+        position: relative;
+        transition: opacity 0.7s;
+   }
+   .img .p:hover {
+       opacity: 0%;
+   }
+   .figure2 figcaption {
+       position: relative;
+       
+   }
+   .figure2 figcaption a {
+       display: inline;
+       text-align: center;
+       color: var(--p);
+       margin-bottom: 10px;
+       font-size: 16px;
+       padding-top: 8px;
+       padding-bottom: 8px;
+       background-color: var(--b);
+       text-decoration: none;
+       padding-right: 10%;
+       padding-left: 10%;
+    }
+   .figure2 figcaption button {
+    margin-bottom: 10px;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 50%;
+    cursor: pointer;
+    border: 1px var(--b) solid;
+    font-family: 'Lexend', sans-serif;
+    color: var(--p);
+    background-color: var(--b);
+    font-size: 15px;
+   }
+   .figure2 figcaption button:hover,.figure2 figcaption a:hover{
+    text-decoration: underline;
+   }
+   .figure2 figcaption .carac{
+        text-decoration: underline;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-bottom: 20px;
+       margin-top: 10px;
+   }
+
+
