@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <title> Fitness </title>
 <meta charset="utf-8">
+<!--        JQuery          -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="photos/icon2.png" />
 <!-- Font Awesome : importing icons -->
@@ -16,13 +20,15 @@
  <header>
   <div class="UpNav">
       <div class="p">
-
         <div class="email">
         <i class="far fa-envelope"></i><p> fitness265@gmail.com</p></div>
         <a href="https://www.facebook.com/HEALTHY.Tunisie/"><i class="fab fa-facebook"></i></a>
         <a href="https://www.instagram.com/HEALTHY.Tunisie/"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/HEALTHY.Tunisie/"><i class="fab fa-youtube"></i></a>
-      </div>
+        <div class="phone" >
+            <i class="fas fa-phone-alt"></i>
+            <p> 012 150 147 </p></div>
+                </div>
     <div class="sign">
         <button class="Signin"> Sign In </button>
         <button class="Signup"> Sign Up </button>
@@ -63,29 +69,40 @@
    </div>
   </nav>
  </header>
-
+ <div class="filtrage">
+    <ul>
+       <li class="list" data-filter="all" ><button>All</button></li> 
+       <li class="list" data-filter="equi"><button>Equipements</button></li>
+       <li class="list" data-filter="acc"><button> Accessories</button></li>
+    </ul>
+</div>
 <section>
 <div class="left">
-
 </div>
+
 <div class="equipements">
-    <!--1-->
-  <figure class="figure2">
+    
+<!--1-->
+<div class="itemBox acc">
+    <figure class="figure2">
     <div class="img">
-        <img src="./Product/img/e1.jpg" alt="Dumbbells" class="d">
-        <img src="./Product/img/9.jpg" alt="Pamela" class="p"> 
+        <img src="./Product/img/a5-1.jpg" alt="Dumbbells" class="d">
+        <img src="./Product/img/a5.jpg" alt="Pamela" class="p"> 
     </div>
        <figcaption>
         <div class="carac">
-            <p>Pole</p>
-            <p>100.9 dt</p>
+            <p>Skipping Rope</p>
+            <p>49.5 dt</p>
         </div>
         <a href="#">Read More</a>
         <button>Add To Cart</button>
     </figcaption> 
-</figure>
+</figure>  
+</div>
+
 <!--2-->
-<figure class="figure2">
+<div class="itemBox equi">
+  <figure class="figure2">
   <div class="img">
       <img src="./Product/img/k.jpg" alt="Kettlebell" class="d">
       <img src="./Product/img/3.png" alt="Pamela" class="p"> 
@@ -100,9 +117,12 @@
           Add To Cart
       </button>
   </figcaption> 
-</figure>
+</figure>  
+</div>
+
 <!--3-->
-  <figure class="figure2">
+<div class="itemBox equi">
+     <figure class="figure2">
       <div class="img">
           <img src="./Product/img/w110.jpg" alt="Dumbbells" class="d">
           <img src="./Product/img/p1.jpg" alt="Pamela" class="p"> 
@@ -115,10 +135,12 @@
           <a href="#">Read More</a>
           <button>Add To Cart</button>
       </figcaption> 
-  </figure>
+  </figure> 
+</div>
 
-  <!--4-->
-  <figure class="figure2">
+<!--4-->
+<div class="itemBox equi">
+    <figure class="figure2">
     <div class="img">
         <img src="./Product/img/e44.jpg" alt="Bumper Plates" class="d">
         <img src="./Product/img/7.png" alt="Pamela" class="p"> 
@@ -131,9 +153,14 @@
         <a href="#">Read More</a>
         <button>Add To Cart</button>
     </figcaption> 
-</figure>
-  <!--5-->
-  <figure class="figure2">
+</figure>  
+</div>
+
+
+<!--5-->
+
+<div class="itemBox equi">
+    <figure class="figure2">
     <div class="img">
         <img src="./Product/img/e5.jpg" alt="training band" class="d">
         <img src="./Product/img/5.jpg" alt="Pamela" class="p"> 
@@ -147,38 +174,46 @@
         <button>Add To Cart</button>
     </figcaption> 
 </figure>
+</div> 
  <!--6-->
- <figure class="figure2">
-    <div class="img">
-        <img src="./Product/img/ee6.jpg" alt="Dumbbells" class="d">
-        <img src="./Product/img/p10.jpg" alt="Pamela" class="p"> 
-    </div>
-       <figcaption>
-        <div class="carac">
-            <p>Barbell Bar</p>
-            <p>89.9 dt</p>
-        </div>
-        <a href="#">Read More</a>
-        <button>Add To Cart</button>
-    </figcaption> 
-</figure>
+ <div class="itemBox acc">
+    <figure class="figure2">
+   <div class="img">
+       <img src="./Product/img/a9-1.jpg" alt="Dumbbells" class="d">
+       <img src="./Product/img/a9.jpg" alt="Pamela" class="p"> 
+   </div>
+      <figcaption>
+       <div class="carac">
+           <p>Water Bottle</p>
+           <p>45.8 dt</p>
+       </div>
+       <a href="#">Read More</a>
+       <button>Add To Cart</button>
+   </figcaption> 
+</figure> 
+</div>
+
  <!--7-->
- <figure class="figure2">
-    <div class="img">
-        <img src="./Product/img/e7.jpg" alt="Dumbbells" class="d">
-        <img src="./Product/img/8.jpg" alt="Pamela" class="p"> 
-    </div>
-       <figcaption>
-        <div class="carac">
-            <p>Weights Benche</p>
-            <p>289.9 dt</p>
-        </div>
-        <a href="#">Read More</a>
-        <button>Add To Cart</button>
-    </figcaption> 
-</figure>
+ <div class="itemBox acc">
+    <figure class="figure2">
+      <div class="img">
+          <img src="./Product/img/a10-3.jpg" alt="Dumbbells" class="d">
+          <img src="./Product/img/a10-2.jpg" alt="Pamela" class="p"> 
+      </div>
+         <figcaption>
+          <div class="carac">
+              <p>Resistance Bands Set</p>
+              <p>160.5 dt</p>
+          </div>
+          <a href="#">Read More</a>
+          <button>Add To Cart</button>
+      </figcaption> 
+  </figure>  
+</div>
+
  <!--8-->
- <figure class="figure2">
+ <div class="itemBox equi">
+    <figure class="figure2">
     <div class="img">
         <img src="./Product/img/e6.jpg" alt="Dumbbells" class="d">
         <img src="./Product/img/6.jpg" alt="Pamela" class="p"> 
@@ -191,10 +226,12 @@
         <a href="#">Read More</a>
         <button>Add To Cart</button>
     </figcaption> 
-</figure>
+</figure> 
+</div>
 
 <!--9-->
-  <figure class="figure2">
+<div class="itemBox equi">
+     <figure class="figure2">
       <div class="img">
           <img src="./Product/img/d01.jpg" alt="Dumbbells" class="d">
           <img src="./Product/img/4.png" alt="Pamela" class="p"> 
@@ -207,24 +244,31 @@
           <a href="#">Read More</a>
           <button>Add To Cart</button>
       </figcaption> 
-  </figure>
-    <!--10-->
+  </figure> 
+</div>
+
+<!--10-->
+<div class="itemBox acc">
     <figure class="figure2">
-        <div class="img">
-            <img src="./Product/img/a10-3.jpg" alt="Dumbbells" class="d">
-            <img src="./Product/img/a10-2.jpg" alt="Pamela" class="p"> 
-        </div>
-           <figcaption>
-            <div class="carac">
-                <p>Resistance Bands Set</p>
-                <p>160.5 dt</p>
-            </div>
-            <a href="#">Read More</a>
-            <button>Add To Cart</button>
-        </figcaption> 
-    </figure>
-   <!--11-->
-   <figure class="figure2">
+   <div class="img">
+       <img src="./Product/img/a2-1.jpg" alt="Dumbbells" class="d">
+       <img src="./Product/img/a110.jpg" alt="Pamela" class="p"> 
+   </div>
+      <figcaption>
+       <div class="carac">
+           <p>Fitness Mat</p>
+           <p>87.5 dt</p>
+       </div>
+       <a href="#">Read More</a>
+       <button>Add To Cart</button>
+   </figcaption> 
+</figure>
+</div>
+
+
+<!--11-->
+<div class="itemBox acc">
+       <figure class="figure2">
     <div class="img">
         <img src="./Product/img/a11-1.jpg" alt="Dumbbells" class="d">
         <img src="./Product/img/a11.jpg" alt="Pamela" class="p"> 
@@ -238,45 +282,51 @@
         <button>Add To Cart</button>
     </figcaption> 
 </figure>
+</div>
 
-  <!--12-->
-  <figure class="figure2">
+<!--12-->
+<div class="itemBox equi">
+    <figure class="figure2">
+   <div class="img">
+       <img src="./Product/img/ee6.jpg" alt="Dumbbells" class="d">
+       <img src="./Product/img/p10.jpg" alt="Pamela" class="p"> 
+   </div>
+      <figcaption>
+       <div class="carac">
+           <p>Barbell Bar</p>
+           <p>89.9 dt</p>
+       </div>
+       <a href="#">Read More</a>
+       <button>Add To Cart</button>
+   </figcaption> 
+</figure>
+</div>
+
+
+<!--13-->
+<div class="itemBox equi">
+    <figure class="figure2">
     <div class="img">
-        <img src="./Product/img/a9-1.jpg" alt="Dumbbells" class="d">
-        <img src="./Product/img/a9.jpg" alt="Pamela" class="p"> 
+        <img src="./Product/img/e1.jpg" alt="Dumbbells" class="d">
+        <img src="./Product/img/9.jpg" alt="Pamela" class="p"> 
     </div>
        <figcaption>
         <div class="carac">
-            <p>Water Bottle</p>
-            <p>45.8 dt</p>
+            <p>Pole</p>
+            <p>100.9 dt</p>
         </div>
         <a href="#">Read More</a>
         <button>Add To Cart</button>
     </figcaption> 
-</figure>
+</figure>  
+</div>
 
-  <!--13-->
-  <figure class="figure2">
-    <div class="img">
-        <img src="./Product/img/a5-1.jpg" alt="Dumbbells" class="d">
-        <img src="./Product/img/a5.jpg" alt="Pamela" class="p"> 
-    </div>
-       <figcaption>
-        <div class="carac">
-            <p>Skipping Rope</p>
-            <p>49.5 dt</p>
-        </div>
-        <a href="#">Read More</a>
-        <button>Add To Cart</button>
-    </figcaption> 
-</figure>
-
- 
 <!--14-->
- <figure class="figure2">
+<div class="itemBox acc">
+    <figure class="figure2">
     <div class="img">
         <img src="./Product/img/a10-1.jpg" alt="Dumbbells" class="d">
-        <img src="./Product/img/a4.jpg" alt="Pamela" class="p"> 
+        <img src="./Product/img/m.jpg" alt="Pamela" class="p"> 
     </div>
        <figcaption>
         <div class="carac">
@@ -286,22 +336,28 @@
         <a href="#">Read More</a>
         <button>Add To Cart</button>
     </figcaption> 
-</figure>
+</figure> 
+</div>
+
  <!--15-->
- <figure class="figure2">
-    <div class="img">
-        <img src="./Product/img/a2-1.jpg" alt="Dumbbells" class="d">
-        <img src="./Product/img/a110.jpg" alt="Pamela" class="p"> 
-    </div>
-       <figcaption>
-        <div class="carac">
-            <p>Fitness Mat</p>
-            <p>87.5 dt</p>
-        </div>
-        <a href="#">Read More</a>
-        <button>Add To Cart</button>
-    </figcaption> 
+ <div class="itemBox acc">
+    <figure class="figure2">
+   <div class="img">
+       <img src="./Product/img/e7.jpg" alt="Dumbbells" class="d">
+       <img src="./Product/img/8.jpg" alt="Pamela" class="p"> 
+   </div>
+      <figcaption>
+       <div class="carac">
+           <p>Weights Benche</p>
+           <p>289.9 dt</p>
+       </div>
+       <a href="#">Read More</a>
+       <button>Add To Cart</button>
+   </figcaption> 
 </figure>
+</div>
+
+
 </div>
 
 
@@ -310,10 +366,69 @@
 </div>
 </section>
 
-<footer>
-    
+<footer style="display: block; position:relative; bottom: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="fs-about">
+                        <div class="fa-logo">
+                            <!--<a href="#"><img src="img/logo.png" alt=""></a>-->
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore dolore magna aliqua endisse ultrices gravida lorem.</p>
+                        <div class="fa-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa  fa-envelope-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Subscribe</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-widget">
+                        <h2>I am healthy <br>I am wealthy</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </footer>
+<!-- JS -->
 
- <script src="project.js"></script>
+ <script src="js/project.js"></script>
+ <script src="js/filtrage.js"></script>
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
